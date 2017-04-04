@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DDoS Security Suite" duration-ms="23787" started-at="2017-04-04T13:49:08Z" finished-at="2017-04-04T13:49:31Z">
+    <groups>
+    </groups>
+    <test name="DDOS Security Test" duration-ms="23787" started-at="2017-04-04T13:49:08Z" finished-at="2017-04-04T13:49:31Z">
+      <class name="com.tests.project.security.DDoS_SecurityTests">
+        <test-method status="PASS" signature="testSubmitDDoSConfiguration()[pri:0, instance:com.tests.project.security.DDoS_SecurityTests@79be86]" name="testSubmitDDoSConfiguration" duration-ms="23771" started-at="2017-04-04T19:19:08Z" finished-at="2017-04-04T19:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubmitDDoSConfiguration -->
+        <test-method status="PASS" signature="killBrowser()[pri:0, instance:com.tests.project.security.DDoS_SecurityTests@79be86]" name="killBrowser" is-config="true" duration-ms="616" started-at="2017-04-04T19:19:31Z" finished-at="2017-04-04T19:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killBrowser -->
+      </class> <!-- com.tests.project.security.DDoS_SecurityTests -->
+    </test> <!-- DDOS Security Test -->
+  </suite> <!-- DDoS Security Suite -->
+</testng-results>
