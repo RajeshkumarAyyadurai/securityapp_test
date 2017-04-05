@@ -7,10 +7,10 @@
 	<url>http://maven.apache.org</url>
 	<name>Security Test Project</name>
 
-	<packaging>jar</packaging>
-	<properties>
+	<!-- <packaging>jar</packaging> -->
+	<!-- <properties>
 		<suiteXmlFile>testng.xml</suiteXmlFile>
-	</properties>
+	</properties> -->
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -60,7 +60,7 @@
 				<configuration>
 					<printSummary>true</printSummary>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
