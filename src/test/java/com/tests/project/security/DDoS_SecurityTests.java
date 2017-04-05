@@ -47,7 +47,7 @@ public class DDoS_SecurityTests {
 		String email = accountName+"@gmail.com";
 		
 		String projectBaseDir = System.getProperty("user.dir");
-		System.setProperty("phantomjs.binary.path", projectBaseDir+"/lib/drivers/phantomjs.exe");
+		System.setProperty("phantomjs.binary.path", projectBaseDir+"/lib/drivers/phantomjs");
 		driver = new PhantomJSDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);
