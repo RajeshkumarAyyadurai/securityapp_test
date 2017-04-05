@@ -58,10 +58,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
-					<printSummary>true</printSummary>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<shutdown>kill</shutdown>
 				</configuration>
 			</plugin>
 		</plugins>
