@@ -7,7 +7,6 @@
 	<url>http://maven.apache.org</url>
 	<name>Security Test Project</name>
 
-	<packaging>jar</packaging>
 	<properties>
 		<suiteXmlFile>testng.xml</suiteXmlFile>
 	</properties>
