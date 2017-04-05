@@ -7,10 +7,10 @@
 	<url>http://maven.apache.org</url>
 	<name>Security Test Project</name>
 
-	<!-- <packaging>jar</packaging> -->
-	<!-- <properties>
-		<suiteXmlFile>testng.xml</suiteXmlFile>
-	</properties> -->
+	<packaging>jar</packaging>
+	<properties>
+		<suiteXmlFile>${project.basedir}/testng.xml</suiteXmlFile>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -21,24 +21,24 @@
 		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>htmlunit-driver</artifactId> 
 			<version>2.20</version> </dependency> -->
 		<dependency>
-			<groupId>com.github.detro.ghostdriver</groupId>
+			<groupId>com.github.detro.ghostdriver</groupId>	
 			<artifactId>phantomjsdriver</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-htmlunit-driver</artifactId>
-			<version>2.53.1</version>
-		</dependency> -->
+			<version>2.43.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.53.1</version>
+			<version>2.43.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
-			<version>2.53.1</version>
+			<version>2.43.1</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -48,20 +48,19 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<compilerVersion>1.7</compilerVersion>
-					<source>1.7</source>
-					<target>1.7</target>
+					<compilerVersion>1.8</compilerVersion>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.16</version>
+				<version>2.18.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- <shutdown>kill</shutdown> -->
 				</configuration>
 			</plugin>
 		</plugins>
